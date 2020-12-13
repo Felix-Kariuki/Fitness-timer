@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".StopWatch">
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bgcircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+    <ImageView
+        android:id="@+id/ivAnchor"
+        android:layout_width="358dp"
+        android:layout_height="357dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/icanchor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="265dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578">
+
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="62sp" />
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="72dp"
+            android:layout_weight="0"
+            android:background="@drawable/btnblue"
+            android:backgroundTint="@color/darkBlue"
+            android:text="My Schedule"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:backgroundTint="#A840AB" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/btngreen"
+        android:backgroundTint="#48B9AC"
+        android:text="Start Now"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#48B9AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/btnred"
+        android:backgroundTint="#AF3555"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#AF3555"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
