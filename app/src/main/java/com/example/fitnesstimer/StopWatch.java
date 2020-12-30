@@ -52,13 +52,13 @@ public class StopWatch extends AppCompatActivity {
             public void onClick(View v) {
                 time.stop();
                 btnStop.animate().alpha(0).setDuration(300).start();
-                btnStart.animate().alpha(1).translationY(-70).setDuration(300).start();
+                btnStart.animate().alpha(1).translationY(70).setDuration(300).start();
             }
         });
         btnSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnSchedule.setAlpha(0);
+                btnSchedule.setAlpha(1);
                 Intent comingSoon = new Intent(StopWatch.this, schedule.class);
                 startActivity(comingSoon);
             }
